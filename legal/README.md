@@ -6,13 +6,8 @@ App Store 심사용 법적 문서입니다.
 - `privacy-policy.ko.html` / `privacy-policy.en.html` — 개인정보처리방침
 - `terms.ko.html` / `terms.en.html` — 이용약관(EULA)
 
-## 제출 전 반드시 해야 할 것
 
-1. **`{{CONTACT_EMAIL}}` 플레이스홀더를 실제 연락처 이메일로 치환**
-   ```bash
-   # 예시 (실제 이메일로 교체)
-   find legal -name "*.html" -exec sed -i '' 's/{{CONTACT_EMAIL}}/you@example.com/g' {} +
-   ```
+
 
 2. **공개 URL로 호스팅**
    - 가장 간단한 방법: 이 `legal/` 폴더를 별도 GitHub 퍼블릭 레포지토리에 올리고 GitHub Pages 활성화
