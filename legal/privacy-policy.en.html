@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy | Color Codi</title>
+    <title>Privacy Policy | KOLUP</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -37,22 +37,21 @@
   </head>
   <body>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective: April 9, 2026 · Last updated: April 9, 2026</p>
+    <p class="meta">Effective: April 12, 2026 · Last updated: April 17, 2026</p>
 
     <p>
-      Color Codi ("the Service") respects your privacy. This Privacy Policy
+      KOLUP ("the Service") respects your privacy. This Privacy Policy
       describes what information the Service processes and how.
     </p>
 
     <h2>1. Information We Collect</h2>
     <p>
-      <strong
-        >The Service does not collect or store any personal information on its
-        servers.</strong
-      >
-      There is no sign-up, login, or user account. We do not request your name,
-      email, phone number, date of birth, or any other personally identifying
-      information.
+      The Service does not require sign-up or password-based login. However,
+      to improve service quality, it uses Firebase Anonymous Authentication
+      to generate a per-device anonymous identifier (UID).
+      We do not request your name, email, phone number, date of birth, or
+      any other personally identifying information. We collect
+      <strong>anonymized usage analytics</strong> to improve the Service.
     </p>
 
     <h2>2. Information Processed On Your Device</h2>
@@ -76,8 +75,28 @@
       </li>
       <li>
         <strong>Preferences</strong>: Settings you enter (gender, style
-        keywords, clothing categories) are stored only in local device storage
-        (AsyncStorage) and are removed when you uninstall the app.
+        keywords, clothing categories) are stored in local device storage
+        (AsyncStorage) and removed when you uninstall the app.
+      </li>
+      <li>
+        <strong>Cloud sync of onboarding selections</strong>: To improve
+        recommendation quality and prioritize new curations, your onboarding
+        selections (<em>fashion keywords, clothing categories, app version,
+        platform, language</em>) are stored in Firebase Firestore (Google,
+        US/Asia regions) keyed by an anonymous identifier (Firebase Anonymous
+        UID). No name, email, or other directly identifying information is
+        included. This data is deleted when you uninstall the app or upon
+        request via the contact in section 7.
+      </li>
+      <li>
+        <strong>Usage Analytics</strong>: We use Firebase Analytics (Google) to
+        collect anonymized usage data such as screen views, button taps, and
+        feature usage frequency. This data does not include advertising
+        identifiers (IDFA) and cannot be used to personally identify you.
+        Collected data is stored on Google servers (United States). See
+        <a href="https://firebase.google.com/support/privacy"
+          >Firebase Privacy Policy</a
+        >.
       </li>
     </ul>
 
@@ -96,18 +115,35 @@
         <strong>Cloudflare Pages</strong> (color-codi-assets.pages.dev) — CDN
         for outfit assets
       </li>
+      <li>
+        <strong>Google Firebase Analytics</strong> (firebase.google.com) —
+        anonymized app usage analytics
+      </li>
+      <li>
+        <strong>Google Firebase Authentication / Firestore</strong>
+        (firebase.google.com) — anonymous identifier issuance and storage of
+        onboarding selections
+      </li>
     </ul>
 
     <h2>4. Data Retention and Deletion</h2>
     <p>
-      We do not retain any personal data on our servers. All local settings are
-      deleted when you uninstall the app.
+      Local device settings are removed when you uninstall the app. Onboarding
+      selections stored in Firebase Firestore (keyed by an anonymous identifier)
+      are deleted when you use Settings &gt; Data Management &gt; Delete Account
+      in the app, uninstall the app, or upon request via the contact in
+      section 7. We do not retain any other personal data.
     </p>
 
     <h2>5. Your Rights</h2>
     <p>
       You may revoke location, camera, or photo permissions at any time through
       your iOS Settings. Uninstalling the app removes all locally stored data.
+      You can delete your cloud-synced onboarding selections and anonymous
+      authentication data directly from the app via
+      Settings &gt; Data Management &gt; Delete Account.
+      Alternatively, contact us using the email in section 7 and we will
+      erase them without undue delay.
     </p>
 
     <h2>6. Children's Privacy</h2>
@@ -131,3 +167,4 @@
     </p>
   </body>
 </html>
+
